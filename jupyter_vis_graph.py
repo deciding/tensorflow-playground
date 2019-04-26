@@ -1,6 +1,8 @@
 from IPython.display import clear_output, Image, display, HTML
 import tensorflow as tf
 import numpy as np    
+#tf.reset_default_graph()
+#show_graph(tf.get_default_graph().as_graph_def())
 
 def strip_consts(graph_def, max_const_size=32):
     """Strip large constant values from graph_def."""
